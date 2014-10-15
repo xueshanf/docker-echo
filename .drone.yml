@@ -1,20 +1,17 @@
-image: registry-private.itlab.stanford.edu/itlab/dind
-script:
+#image: registry-private.itlab.stanford.edu/itlab/dind
+image: ubuntu:14.04
+#script:
   - /usr/local/bin/dkbuild registry-private.itlab.stanford.edu/test/echo  /var/cache/drone/src/github.com/xueshanf/docker-echo
-#publish:
-#    docker:
-#        dockerfile: DockerFile
-#        docker_server 10.42.2.107 
-#        docker_port: 2375
-#        docker_version: 1.0
-#        registry_host: registry-private.itlab.stanford.edu
-#        registry_protocol: http
-#        registry_login: false
-#        #registry_login_uri: /registry/v1/
-#        #username: myuser
-#        #password: mypassword
-#        #email: myuser@example.com
-#        image_name: docker-echo
-#        push_latest: true
+publish:
+   docker:
+        dockerfile: DockerFile
+        docker_server: 10.42.2.107 
+        docker_port: 2375
+        docker_version: 1.0
+        registry_host: registry-private.itlab.stanford.edu
+        registry_protocol: http
+        registry_login: false
+        image_name: docker-echo
+        push_latest: true
         keep_builds: false
         custom_tag: 0.1
