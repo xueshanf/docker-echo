@@ -1,7 +1,6 @@
-#image: registry-private.itlab.stanford.edu/itlab/dind
+image: registry-private.itlab.stanford.edu/itlab/dind
 #script:
 #  - /usr/local/bin/dkbuild registry-private.itlab.stanford.edu/test/echo  /var/cache/drone/src/github.com/xueshanf/docker-echo
-image: ubuntu:14.04
 publish:
     docker:
         dockerfile: DockerFile
