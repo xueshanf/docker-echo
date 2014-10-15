@@ -1,3 +1,6 @@
-FROM ubuntu:14.04
+  
+FROM ubuntu:latest
 
-ENTRYPOINT ["/bin/echo"]
+ENTRYPOINT ["echo"]
+
+CMD ["hello world"]
