@@ -11,4 +11,4 @@ publish:
         image_name: registry-private.itlab.stanford.edu/test/echo
         push_latest: true
         keep_builds: true
-        custom_tag: 0.2
+        custom_tag: 0.1
