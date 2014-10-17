@@ -1,4 +1,4 @@
-image: ockerfile/ubuntu
+image: dockerfile/ubuntu
 publish:
     docker:
         dockerfile: Dockerfile
