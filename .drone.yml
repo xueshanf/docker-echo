@@ -1,8 +1,8 @@
-image: registry-private.itlab.stanford.edu/itlab/dind
+image: ubuntu:14.04
 publish:
     docker:
         dockerfile: Dockerfile
-        docker_server: 10.42.2.5
+        docker_server: 0.0.0.0
         docker_port: 2375
         docker_version: 1.2.0
         registry_host: registry-private.itlab.stanford.edu
