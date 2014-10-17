@@ -1,4 +1,4 @@
-image: dockerfile/ubuntu
+image: registry-private.itlab.stanford.edu/itlab/dind
 publish:
     docker:
         dockerfile: Dockerfile
